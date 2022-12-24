@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -12,6 +14,10 @@ html {
 img {
   pointer-events: none;
   user-select: none;
+}
+
+.container4 {
+  background-color: #26272b;
 }
 
 .wrapper {
@@ -786,4 +792,93 @@ p {
     margin-right:0;
     font-weight:600
   }
+}
+
+/* Just hover over it */
+.iphone-body{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+  width:280px;
+  height:540px; 
+  background: black;
+  border-radius:35px;
+  box-shadow: 0 0 15px inset rgba(0,0,0,.2),0 40px 100px rgba(0,0,0,0.4);
+  transition: 2s;
+  }
+
+.iphone-body:before{
+  content:'';
+  position:relative;
+  top:15px;
+  left:1px;
+  width:calc(100% - 30px);
+  height:calc(100% - 30px);
+  background:#26272b;
+  border-radius:25px;
+  box-shadow:0 0 20px inset rgba(0,0,0,.2);
+  
+}
+
+.iphone-body:after{
+  content:'';
+  position:absolute;
+  top:15px;
+  width:140px;
+  height:14px;
+  background:black;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  
+}
+
+.iphone-baseline:after{
+  content:'';
+  position:absolute;
+  width:140px;
+  height:3px;
+  background:#fff;
+  top:510px;
+  left:72px;
+  border-radius:30px;
+  
+}
+
+.iphone-body:hover:before{
+  content:'';
+  cursor:pointer;
+  background:url("images/btouchphone.png");
+  background-size: 250px 540px;
+  position: relative;
+  right: 100px;
+}
+
+.phone-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20rem;
+  margin: 0 auto;
+}
+
+.phone2:hover:before {
+  content:'';
+  cursor:pointer;
+  background:url("images/mysitephone.png");
+  background-size: 250px 540px;
+  position: relative;
+  right: 100px;
+}
+
+.section4 h4 {
+  position: absolute; 
+  color: #fff; 
+  font-family: 'Caramel', cursive;
+  font-size: 5rem;
+  left: 38.2%;
+  bottom: 30%;
+}
+
+.my-container {
+  min-height: 100vh;
 }
